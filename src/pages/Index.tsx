@@ -1,7 +1,9 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Clients from "@/components/Clients";
 import Pricing from "@/components/Pricing";
 import WhyOrizonix from "@/components/WhyOrizonix";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -10,8 +12,10 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
       <Services />
+      <Clients />
       <Pricing />
       <WhyOrizonix />
+      <Testimonials />
       <Contact />
       <Footer />
     </div>

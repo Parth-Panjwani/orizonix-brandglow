@@ -42,7 +42,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group text-center p-6 bg-white border border-border rounded-xl hover:border-brand-blue/40 transition-all duration-300 premium-shadow hover:premium-shadow-lg hover:-translate-y-1"
+              className="group text-center p-6 bg-white border border-border rounded-xl hover:border-brand-blue/40 hover:bg-brand-light/30 transition-all duration-300 premium-shadow hover:premium-shadow-lg hover:-translate-y-1"
             >
               {/* Icon Circle */}
               <div className="mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-brand-light/50 group-hover:bg-brand-blue/10 transition-colors">

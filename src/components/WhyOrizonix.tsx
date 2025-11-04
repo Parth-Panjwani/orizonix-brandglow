@@ -42,7 +42,7 @@ const WhyOrizonix = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="group p-6 bg-white border border-border rounded-xl hover:border-brand-blue/40 transition-all duration-300 premium-shadow hover:premium-shadow-lg"
+              className="group p-6 bg-white border border-border rounded-xl hover:border-brand-blue/40 hover:bg-brand-light/30 transition-all duration-300 premium-shadow hover:premium-shadow-lg"
             >
               {/* Icon */}
               <div className="mb-4 w-12 h-12 flex items-center justify-center rounded-lg bg-brand-light/50 group-hover:bg-brand-blue/10 transition-colors">

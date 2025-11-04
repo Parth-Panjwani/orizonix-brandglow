@@ -16,29 +16,29 @@ const Contact = () => {
           Let's turn your vision into reality. Book a call, send a message, or just say hi.
         </p>
 
-        {/* CTA Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 max-w-3xl mx-auto">
+        {/* CTA Buttons Grid - Always 3 columns */}
+        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 max-w-3xl mx-auto">
           <Button
-            className="bg-brand-primary text-white hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg py-6"
+            className="bg-brand-primary text-white hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg py-5 md:py-6 text-xs md:text-base"
           >
-            <Mail className="mr-2 w-5 h-5" />
-            Email Us
+            <Mail className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
+            <span className="hidden md:inline">Email Us</span>
           </Button>
 
           <Button
             variant="outline"
-            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-6"
+            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-5 md:py-6 text-xs md:text-base"
           >
-            <MessageCircle className="mr-2 w-5 h-5" />
-            WhatsApp
+            <MessageCircle className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
+            <span className="hidden md:inline">WhatsApp</span>
           </Button>
 
           <Button
             variant="outline"
-            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-6"
+            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-5 md:py-6 text-xs md:text-base"
           >
-            <Calendar className="mr-2 w-5 h-5" />
-            Book Call
+            <Calendar className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
+            <span className="hidden md:inline">Book Call</span>
           </Button>
         </div>
 

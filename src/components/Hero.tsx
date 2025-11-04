@@ -26,15 +26,12 @@ const Hero = () => {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-brand-primary">
-            We Craft Brands.<br />
-            Build Systems.<br />
-            Automate Growth.
+            Craft. Build. Automate.
           </h1>
 
           {/* Subheading */}
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 px-4">
-            Helping startups and creators launch bold brands, sleek websites, 
-            and intelligent automation systems that scale.
+            Bold brands, sleek websites, and intelligent automation for startups and creators.
           </p>
 
           {/* CTA Buttons */}
