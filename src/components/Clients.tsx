@@ -1,10 +1,10 @@
 const clients = [
-  { name: "TechStart", industry: "SaaS" },
-  { name: "CreativeHub", industry: "Agency" },
-  { name: "GrowthLab", industry: "Marketing" },
-  { name: "InnovateCo", industry: "Tech" },
+  { name: "PetCaart", industry: "SaaS-Ecommerce" },
+  { name: "Ashapura Bajaj", industry: "Agency" },
+  { name: "Shivaay", industry: "Coal Corporation" },
+  { name: "Anjani Enterprise", industry: "Coal Corporation" },
   { name: "BrandForge", industry: "Design" },
-  { name: "AutoFlow", industry: "Automation" },
+  { name: "Shree Niti Vijay", industry: "Restaurant" },
 ];
 
 const Clients = () => {

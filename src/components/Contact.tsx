@@ -13,14 +13,13 @@ const Contact = () => {
         </h2>
 
         <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Let's turn your vision into reality. Book a call, send a message, or just say hi.
+          Let's turn your vision into reality. Book a call, send a message, or
+          just say hi.
         </p>
 
         {/* CTA Buttons Grid - Always 3 columns */}
-        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 max-w-3xl mx-auto">
-          <Button
-            className="bg-brand-primary text-white hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg py-5 md:py-6 text-xs md:text-base"
-          >
+        <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 max-w-3xl mx-auto">
+          <Button className="bg-brand-primary text-white hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg py-5 md:py-6 text-xs md:text-base">
             <Mail className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
             <span className="hidden md:inline">Email Us</span>
           </Button>
@@ -33,13 +32,13 @@ const Contact = () => {
             <span className="hidden md:inline">WhatsApp</span>
           </Button>
 
-          <Button
+          {/* <Button
             variant="outline"
             className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-5 md:py-6 text-xs md:text-base"
           >
             <Calendar className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
             <span className="hidden md:inline">Book Call</span>
-          </Button>
+          </Button> */}
         </div>
 
         {/* Primary CTA */}

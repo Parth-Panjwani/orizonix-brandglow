@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    price: "$2,500",
+    price: "₹8,000",
     period: "/project",
     description: "Perfect for new ventures and MVPs",
     features: [
@@ -18,7 +18,7 @@ const plans = [
   },
   {
     name: "Growth",
-    price: "$5,000",
+    price: "₹15,000",
     period: "/project",
     description: "For businesses ready to scale",
     features: [
@@ -33,7 +33,7 @@ const plans = [
   },
   {
     name: "Scale",
-    price: "$10,000",
+    price: "₹30,000",
     period: "/project",
     description: "Full-service brand + tech transformation",
     features: [
@@ -50,7 +50,10 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="py-16 md:py-20 px-6 bg-secondary/30">
+    <section
+      id="pricing"
+      className="py-16 md:py-20 px-6 bg-secondary/30 scroll-mt-28"
+    >
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -82,18 +85,26 @@ const Pricing = () => {
               )}
 
               <div className="text-center mb-6">
-                <h3 className="text-xl font-bold mb-2 text-brand-primary">{plan.name}</h3>
-                <p className="text-xs text-muted-foreground mb-4">{plan.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-brand-primary">
+                  {plan.name}
+                </h3>
+                <p className="text-xs text-muted-foreground mb-4">
+                  {plan.description}
+                </p>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold text-brand-primary">{plan.price}</span>
-                  <span className="text-sm text-muted-foreground">{plan.period}</span>
+                  <span className="text-4xl font-bold text-brand-primary">
+                    {plan.price}
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    {plan.period}
+                  </span>
                 </div>
               </div>
 
               <ul className="space-y-3 mb-6">
                 {plan.features.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 brand-blue flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-foreground">{feature}</span>
                   </li>
                 ))}
