@@ -3,51 +3,49 @@ import { Mail, MessageCircle, Calendar } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-background to-secondary/30">
+    <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-secondary/30 to-white">
       <div className="container mx-auto max-w-4xl text-center">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-brand-primary">
           Ready to Build Something
           <br />
-          <span className="neon-lime">Extraordinary</span>?
+          Extraordinary?
         </h2>
 
-        <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+        <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           Let's turn your vision into reality. Book a call, send a message, or just say hi.
         </p>
 
         {/* CTA Buttons Grid */}
-        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 max-w-3xl mx-auto">
           <Button
-            className="bg-neon-teal text-primary-foreground hover:bg-neon-teal/90 transition-all duration-300 hover:shadow-[0_0_30px_rgba(8,240,255,0.5)] py-4 md:py-6 px-3 md:px-6 text-xs md:text-base"
+            className="bg-brand-primary text-white hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg py-6"
           >
-            <Mail className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />
-            <span className="hidden sm:inline">Email Us</span>
-            <span className="sm:hidden">Email</span>
+            <Mail className="mr-2 w-5 h-5" />
+            Email Us
           </Button>
 
           <Button
             variant="outline"
-            className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime transition-all duration-300 py-4 md:py-6 px-3 md:px-6 text-xs md:text-base"
+            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-6"
           >
-            <MessageCircle className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />
-            <span className="hidden sm:inline">WhatsApp</span>
-            <span className="sm:hidden">Chat</span>
+            <MessageCircle className="mr-2 w-5 h-5" />
+            WhatsApp
           </Button>
 
           <Button
             variant="outline"
-            className="border-neon-pink/50 text-neon-pink hover:bg-neon-pink/10 hover:border-neon-pink transition-all duration-300 py-4 md:py-6 px-3 md:px-6 text-xs md:text-base"
+            className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 py-6"
           >
-            <Calendar className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />
-            <span className="hidden sm:inline">Book Call</span>
-            <span className="sm:hidden">Call</span>
+            <Calendar className="mr-2 w-5 h-5" />
+            Book Call
           </Button>
         </div>
 
-        {/* Glowing CTA */}
+        {/* Primary CTA */}
         <Button
-          className="mt-4 md:mt-6 bg-gradient-to-r from-neon-teal via-neon-lime to-neon-pink text-primary-foreground font-bold px-6 md:px-12 py-5 md:py-7 text-sm md:text-base lg:text-lg hover:scale-105 transition-transform duration-300"
+          size="lg"
+          className="mt-6 bg-brand-blue text-white hover:bg-brand-primary transition-all duration-300 premium-shadow-lg hover:scale-105 px-8 py-6 text-base"
         >
           Let's Build Something
         </Button>

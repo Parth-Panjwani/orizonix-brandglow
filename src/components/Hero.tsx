@@ -1,49 +1,46 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-grid-bg.jpg";
+import { ArrowRight, Sparkles } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-brand-light/20 to-white">
+      {/* Decorative Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-light/40 via-transparent to-transparent" />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
-
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-        <div className="animate-fade-in">
+      <div className="relative z-10 container mx-auto px-6 py-16 text-center">
+        <div className="animate-fade-up max-w-5xl mx-auto">
+          {/* Logo */}
+          <div className="mb-6 flex justify-center">
+            <img src={logo} alt="Orizonix Logo" className="w-20 h-20 md:w-24 md:h-24" />
+          </div>
+
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-neon-teal/30 mb-8">
-            <Sparkles className="w-4 h-4 neon-teal" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light/50 border border-brand-blue/20 mb-6">
+            <Sparkles className="w-4 h-4 brand-blue" />
             <span className="text-sm font-medium text-muted-foreground">
               Creative + Automation Agency
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-            We Craft Brands.
-            <br />
-            <span className="neon-teal">Build Systems.</span>
-            <br />
-            <span className="neon-lime">Automate Growth.</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-brand-primary">
+            We Craft Brands.<br />
+            Build Systems.<br />
+            Automate Growth.
           </h1>
 
           {/* Subheading */}
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 md:mb-12 px-4">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 px-4">
             Helping startups and creators launch bold brands, sleek websites, 
             and intelligent automation systems that scale.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="flex flex-row gap-3 justify-center items-center">
             <Button 
-              className="group bg-neon-teal text-primary-foreground hover:bg-neon-teal/90 transition-all duration-300 hover:shadow-[0_0_30px_rgba(8,240,255,0.5)] px-4 sm:px-6 md:px-8 py-4 md:py-6 text-sm md:text-base"
+              className="group bg-brand-primary text-primary-foreground hover:bg-brand-blue transition-all duration-300 premium-shadow hover:premium-shadow-lg px-6 md:px-8 py-5 md:py-6 text-sm md:text-base"
             >
               Start Project
               <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
@@ -51,19 +48,11 @@ const Hero = () => {
             
             <Button 
               variant="outline"
-              className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime transition-all duration-300 px-4 sm:px-6 md:px-8 py-4 md:py-6 text-sm md:text-base"
+              className="border-brand-primary/30 text-brand-primary hover:bg-brand-light/50 hover:border-brand-blue transition-all duration-300 px-6 md:px-8 py-5 md:py-6 text-sm md:text-base"
             >
               See Work
             </Button>
           </div>
-        </div>
-
-        {/* Floating Icons */}
-        <div className="absolute top-1/4 left-10 animate-grid-float">
-          <div className="w-16 h-16 border-2 border-neon-pink/30 rounded-lg rotate-12" />
-        </div>
-        <div className="absolute bottom-1/4 right-10 animate-grid-float" style={{ animationDelay: '1s' }}>
-          <div className="w-12 h-12 border-2 border-neon-lime/30 rounded-full" />
         </div>
       </div>
     </section>

@@ -8,55 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Orizonix Dark Theme - Royal Blue + Neon Accents */
-    --background: 230 60% 11%;
-    --foreground: 0 0% 100%;
+    /* Orizonix Premium Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 224 71% 12%;
 
-    --card: 230 55% 15%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 12%;
 
-    --popover: 230 55% 15%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 12%;
 
-    --primary: 184 100% 52%;
-    --primary-foreground: 230 60% 11%;
+    --primary: 224 71% 22%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 50% 20%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 12%;
 
-    --muted: 230 45% 18%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 76 100% 61%;
-    --accent-foreground: 230 60% 11%;
+    --accent: 220 70% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 230 40% 25%;
-    --input: 230 40% 25%;
-    --ring: 184 100% 52%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71% 22%;
 
     --radius: 0.75rem;
 
-    /* Neon Accent Colors */
-    --neon-teal: 184 100% 52%;
-    --neon-lime: 76 100% 61%;
-    --neon-pink: 302 100% 62%;
+    /* Brand Colors */
+    --brand-primary: 224 71% 22%;
+    --brand-blue: 224 71% 50%;
+    --brand-light: 220 70% 90%;
 
-    /* Glow Shadows */
-    --glow-teal: 0 0 20px hsl(184 100% 52% / 0.5);
-    --glow-lime: 0 0 20px hsl(76 100% 61% / 0.5);
-    --glow-pink: 0 0 20px hsl(302 100% 62% / 0.5);
-
-    --sidebar-background: 230 60% 11%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 184 100% 52%;
-    --sidebar-primary-foreground: 230 60% 11%;
-    --sidebar-accent: 230 50% 20%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 230 40% 25%;
-    --sidebar-ring: 184 100% 52%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 224 71% 12%;
+    --sidebar-primary: 224 71% 22%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 224 71% 12%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 224 71% 22%;
   }
 }
 
@@ -69,57 +64,52 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-sans antialiased;
   }
 
-  /* Neon Glow Utilities */
-  .neon-teal {
-    color: hsl(var(--neon-teal));
+  /* Brand Color Utilities */
+  .brand-primary {
+    color: hsl(var(--brand-primary));
   }
   
-  .neon-lime {
-    color: hsl(var(--neon-lime));
-  }
-  
-  .neon-pink {
-    color: hsl(var(--neon-pink));
+  .brand-blue {
+    color: hsl(var(--brand-blue));
   }
 
-  .glow-teal {
-    box-shadow: var(--glow-teal);
-  }
-
-  .glow-lime {
-    box-shadow: var(--glow-lime);
-  }
-
-  .glow-pink {
-    box-shadow: var(--glow-pink);
-  }
-
-  /* Grid Animation */
-  @keyframes grid-float {
-    0%, 100% {
+  /* Smooth Animations */
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
       transform: translateY(0);
     }
-    50% {
-      transform: translateY(-10px);
-    }
   }
 
-  @keyframes pulse-glow {
-    0%, 100% {
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
       opacity: 1;
-      filter: brightness(1);
-    }
-    50% {
-      opacity: 0.8;
-      filter: brightness(1.2);
+      transform: scale(1);
     }
   }
 
-  .animate-grid-float {
-    animation: grid-float 6s ease-in-out infinite;
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out;
   }
 
-  .animate-pulse-glow {
-    animation: pulse-glow 3s ease-in-out infinite;
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out;
+  }
+
+  /* Premium Shadow */
+  .premium-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .premium-shadow-lg {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
   }
 }
