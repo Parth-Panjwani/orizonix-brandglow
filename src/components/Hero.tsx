@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             We Craft Brands.
             <br />
             <span className="neon-teal">Build Systems.</span>
@@ -35,25 +35,23 @@ const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 md:mb-12 px-4">
             Helping startups and creators launch bold brands, sleek websites, 
             and intelligent automation systems that scale.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-row gap-3 sm:gap-4 justify-center items-center">
             <Button 
-              size="lg" 
-              className="group bg-neon-teal text-primary-foreground hover:bg-neon-teal/90 transition-all duration-300 hover:shadow-[0_0_30px_rgba(8,240,255,0.5)] px-8 py-6 text-lg"
+              className="group bg-neon-teal text-primary-foreground hover:bg-neon-teal/90 transition-all duration-300 hover:shadow-[0_0_30px_rgba(8,240,255,0.5)] px-4 sm:px-6 md:px-8 py-4 md:py-6 text-sm md:text-base"
             >
               Start Project
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button 
-              size="lg" 
               variant="outline"
-              className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime transition-all duration-300 px-8 py-6 text-lg"
+              className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime transition-all duration-300 px-4 sm:px-6 md:px-8 py-4 md:py-6 text-sm md:text-base"
             >
               See Work
             </Button>
